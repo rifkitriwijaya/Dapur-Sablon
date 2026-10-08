@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Box - Dapur Sablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-login="wajib">
+
+  <header class="navbar navbar-user garis-bawah">
+    <a href="beranda.html" class="logo">DAPURSABLON</a>
+
+    <form class="pencarian" action="#">
+      <select onchange="if (this.value) location.href = 'beranda.html#' + this.value">
+        <option value="">KATEGORI</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="banner">Banner</option>
+        <option value="screen">Screen Printing</option>
+        <option value="sticker">Sticker & Label</option>
+        <option value="merch">Merchendise</option>
+      </select>
+      <input type="text" placeholder="Cari produk yang diinginkan disini...">
+      <button type="submit">Cari</button>
+    </form>
+
+    <div class="akun">
+      <a href="keranjang.html" class="keranjang"><img src="" alt="Keranjang"></a>
+      <a href="riwayat.html" class="nama-user">Rifki Triwijaya</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </header>
+
+  <main class="detail">
+    <h2 class="detail-judul">DETAIL PRODUK</h2>
+
+    <section class="detail-atas">
+      <div class="detail-foto">
+        <img src="gambar/neonbox.jpg" alt="Neon Box">
+      </div>
+
+      <form class="detail-info" id="form-pesan" data-id="neon-box" data-nama="Neon Box" data-ket="Akrilik dengan lampu LED" data-harga="350000">
+        <div class="rating-baris">
+          <span class="bintang">★★★★<i>★</i></span>
+          <b>4.8</b>
+          <span>30 Ulasan</span>
+          <span class="terlaris">Terlaris</span>
+        </div>
+
+        <p class="jenis">NEON BOX & PAPAN NAMA</p>
+        <h1>Neon Box</h1>
+        <p class="deskripsi">Neon box akrilik dengan lampu LED terang untuk papan nama toko, kafe, atau usaha kamu. Tampilan mengikuti logo yang kamu kirim.</p>
+
+        <p class="harga-besar" id="harga-satuan" style="margin-bottom:30px">Rp. 350.000,00</p>
+
+        <hr>
+
+        <p class="label-form">Ukuran</p>
+        <div class="pilihan-ukuran">
+          <label><input type="radio" name="ukuran" value="40 x 40 cm" data-label="ukuran" data-tambah="0" checked><span>40 x 40 cm</span></label>
+          <label><input type="radio" name="ukuran" value="60 x 60 cm" data-label="ukuran" data-tambah="200000"><span>60 x 60 cm</span></label>
+          <label><input type="radio" name="ukuran" value="80 x 80 cm" data-label="ukuran" data-tambah="450000"><span>80 x 80 cm</span></label>
+        </div>
+
+        <p class="label-form">Warna Lampu</p>
+        <div class="pilihan-warna">
+          <label title="Putih"><input type="radio" name="lampu" value="Putih" data-label="lampu" data-tambah="0" checked><span style="background:#ffffff"></span></label>
+          <label title="Kuning hangat"><input type="radio" name="lampu" value="Kuning hangat" data-label="lampu" data-tambah="0"><span style="background:#f5c542"></span></label>
+          <label title="Biru"><input type="radio" name="lampu" value="Biru" data-label="lampu" data-tambah="0"><span style="background:#2f6fdb"></span></label>
+        </div>
+
+        <p class="label-form">Bentuk</p>
+        <select name="bentuk" class="posisi" data-label="bentuk">
+          <option value="Persegi" data-tambah="0">Persegi</option>
+          <option value="Lingkaran" data-tambah="50000">Lingkaran</option>
+        </select>
+
+        <p class="label-form">File Desain</p>
+        <label class="upload">
+          <input type="file" name="desain" accept=".pdf,.jpg,.jpeg,.png">
+          <img src="" alt="">
+          <span>
+            Upload File Desain
+            <small>Pdf, JPEG, PNG atau JPG maksimal 10 mb.</small>
+          </span>
+        </label>
+
+        <div class="jumlah-total">
+          <div class="jumlah">
+            <button type="button" id="kurang">−</button>
+            <input type="number" id="jumlah" name="jumlah" value="1" min="1">
+            <button type="button" id="tambah">+</button>
+          </div>
+          <p class="total">Total <span id="total">Rp 350.000,00</span></p>
+        </div>
+
+        <button type="submit" class="btn-keranjang">Tambah Ke Keranjang</button>
+      </form>
+    </section>
+
+    <section class="detail-tengah">
+      <div class="tentang-produk">
+        <h3>Tentang Produk</h3>
+        <div class="isi">
+          <p>Neon box dibuat dari rangka besi hollow dengan permukaan akrilik dan lampu LED hemat listrik. Cocok dipasang di depan toko atau di dalam ruangan.</p>
+          <p>Kirim logo atau teks yang diinginkan, lalu tim kami menyiapkan desain dan proof sebelum produksi dimulai.</p>
+        </div>
+      </div>
+
+      <div class="spesifikasi">
+        <h3>Spesifikasi</h3>
+        <div class="baris"><span>Bahan</span><span>Akrilik + Besi Hollow</span></div>
+        <div class="baris"><span>Lampu</span><span>LED</span></div>
+        <div class="baris"><span>Ukuran</span><span>40 cm sampai 80 cm</span></div>
+        <div class="baris"><span>Sisi Cetak</span><span>Satu sisi</span></div>
+        <div class="baris"><span>Minimum Order</span><span>1 PCS</span></div>
+      </div>
+    </section>
+
+    <section class="cara-pesan">
+      <h3>Cara Pesan</h3>
+      <p>Bagian teknis kami rapikan, kamu fokus ke hasil yang ingin dibuat.</p>
+      <h2>Sesederhana itu.</h2>
+      <div class="langkah">
+        <div>
+          <h4>01</h4>
+          <h5>Atur Pesanan</h5>
+          <p>Pilih ukuran, bahan, pilihan lainnya, dan jumlah yang kamu butuhkan.</p>
+        </div>
+        <div>
+          <h4>02</h4>
+          <h5>Kirim Desain</h5>
+          <p>Upload file atau kirim referensi. Kami cek sebelum membuat.</p>
+        </div>
+        <div>
+          <h4>03</h4>
+          <h5>Setuju lalu produksi</h5>
+          <p>Setelah proof oke, pesanan masuk produksi dan siap dikirim.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ulasan">
+      <div class="ulasan-atas">
+        <h3>Ulasan Pelanggan</h3>
+        <div class="ulasan-nilai">
+          <b>4.8</b> <span class="bintang">★★★★<i>★</i></span>
+          <p>30 Ulasan Terverifikasi</p>
+        </div>
+      </div>
+      <div class="ulasan-daftar">
+        <div class="ulasan-kartu">
+          <span class="bintang">★★★★<i>★</i></span>
+          <p>“Hasilnya rapi dan sesuai pesanan. Proof-nya membantu banget.”</p>
+        </div>
+        <div class="ulasan-kartu">
+          <span class="bintang">★★★★<i>★</i></span>
+          <p>“Hasilnya rapi dan sesuai pesanan. Proof-nya membantu banget.”</p>
+        </div>
+        <div class="ulasan-kartu">
+          <span class="bintang">★★★★<i>★</i></span>
+          <p>“Hasilnya rapi dan sesuai pesanan. Proof-nya membantu banget.”</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h2>DAPURSABLON</h2>
+      <p class="tag">PERCETAKAN & SABLON</p>
+      <p>Menyediakan berbagai produk digital sablon dengan kualitas terbaik dan harga terjangkau. Kami bergerak di bidang sablon kaos, merchandise, percetakan, dan kebutuhan branding lainnya</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/dapur.sablon"><img src="gambar/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/6282177222202"><img src="gambar/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="gambar/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer-kanan">
+      <p>JL. KANA III, CEMP. PUTIH,<br>KEC. JELUTUNG, KOTA JAMBI, JAMBI 36123</p>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

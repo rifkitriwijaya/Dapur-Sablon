@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - Dapur Sablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-login="wajib">
+
+  <header class="navbar navbar-user garis-bawah">
+    <a href="beranda.html" class="logo">DAPURSABLON</a>
+
+    <form class="pencarian" action="#">
+      <select onchange="if (this.value) location.href = 'beranda.html#' + this.value">
+        <option value="">KATEGORI</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="banner">Banner</option>
+        <option value="screen">Screen Printing</option>
+        <option value="sticker">Sticker & Label</option>
+        <option value="merch">Merchendise</option>
+      </select>
+      <input type="text" placeholder="Cari produk yang diinginkan disini...">
+      <button type="submit">Cari</button>
+    </form>
+
+    <div class="akun">
+      <a href="keranjang.html" class="keranjang"><img src="gambar/cart.jpg" alt="Keranjang"></a>
+      <a href="riwayat.html" class="nama-user">Rifki Triwijaya</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </header>
+
+  <main class="halaman-keranjang">
+    <p class="belanja">BELANJA</p>
+    <h1>KERANJANG KAMU</h1>
+    <hr>
+
+    <div class="keranjang-isi">
+
+      <div class="keranjang-daftar" id="daftar-keranjang"></div>
+
+      <aside class="ringkasan">
+        <h3>RINGKASAN PESANAN</h3>
+        <div class="ringkasan-baris"><span>SUB TOTAL</span><b id="sub-total">Rp.0</b></div>
+        <div class="ringkasan-baris"><span>BIAYA DESAIN</span><b id="biaya-desain">Rp.0</b></div>
+        <div class="ringkasan-baris"><span>BIAYA ONGKIR</span><b id="biaya-ongkir">Rp.0</b></div>
+        <div class="ringkasan-total"><b>TOTAL</b><b id="total-semua">Rp.0</b></div>
+        <a href="pemesanan.html" class="btn-lanjut" id="lanjut">LANJUT KE PEMESANAN</a>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h2>DAPURSABLON</h2>
+      <p class="tag">PERCETAKAN & SABLON</p>
+      <p>Menyediakan berbagai produk digital sablon dengan kualitas terbaik dan harga terjangkau. Kami bergerak di bidang sablon kaos, merchandise, percetakan, dan kebutuhan branding lainnya</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/dapur.sablon"><img src="gambar/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/6282177222202"><img src="gambar/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="gambar/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer-kanan">
+      <p>JL. KANA III, CEMP. PUTIH,<br>KEC. JELUTUNG, KOTA JAMBI, JAMBI 36123</p>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

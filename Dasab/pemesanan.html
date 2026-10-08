@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan - Dapur Sablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-login="wajib">
+
+  <header class="navbar navbar-user garis-bawah tebal">
+    <a href="beranda.html" class="logo">DAPURSABLON</a>
+
+    <div class="akun">
+      <a href="keranjang.html" class="keranjang"><img src="gambar/cart.jpg" alt="Keranjang"></a>
+      <a href="riwayat.html" class="nama-user">Rifki Triwijaya</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </header>
+
+  <main class="halaman-pesan">
+    <p class="pesan-kecil">PEMESANAN</p>
+    <h1>HAMPIR JADI.</h1>
+    <p class="pesan-sub">Isi alamat dan pilih cara pembayaran.<br>Pesanan diproses setelah detailnya kami konfirmasi.</p>
+    <hr>
+
+    <div class="keranjang-isi">
+
+      <form class="form-pembayaran" id="form-pembayaran">
+        <h2>Data Penerima</h2>
+
+        <div class="dua-kolom">
+          <div>
+            <label for="nama">Nama Penerima</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+          </div>
+          <div>
+            <label for="wa">Nomor WhatsApp</label>
+            <input type="tel" id="wa" name="wa" placeholder="08xxxxxxxxxx" pattern="08[0-9]{8,12}" title="Awali dengan 08, 10 sampai 14 angka" required>
+          </div>
+        </div>
+
+        <label for="alamat">Alamat Lengkap</label>
+        <textarea id="alamat" name="alamat" placeholder="Masukkan Alamat Anda....." required></textarea>
+
+        <label for="catatan">Catatan</label>
+        <textarea id="catatan" name="catatan" placeholder="Optional..."></textarea>
+
+        <hr>
+
+        <h2>Metode Pembayaran</h2>
+
+        <input type="radio" name="metode" id="m-transfer" value="Transfer Bank" checked>
+        <label for="m-transfer" class="metode">
+          <span class="bulat"></span>
+          <span class="metode-teks">
+            <b>Transfer Bank</b>
+            <small>Melalui via : BCA, Mandiri, Seabank</small>
+          </span>
+          <img src="" alt="Transfer Bank">
+        </label>
+
+        <input type="radio" name="metode" id="m-qris" value="Qris">
+        <label for="m-qris" class="metode">
+          <span class="bulat"></span>
+          <span class="metode-teks">
+            <b>Qris</b>
+            <small>Bayar cepat melalui aplikasi DANA, GOPAY, SHOPEPAY</small>
+          </span>
+          <img src="" alt="Qris">
+        </label>
+
+        <input type="radio" name="metode" id="m-cod" value="COD">
+        <label for="m-cod" class="metode">
+          <span class="bulat"></span>
+          <span class="metode-teks">
+            <b>COD</b>
+            <small>Bayar di tempat</small>
+          </span>
+          <img src="" alt="COD">
+        </label>
+
+        <button type="submit" class="btn-buat">BUAT PESANAN</button>
+      </form>
+
+      <aside class="ringkasan krem">
+        <h3>PESANAN KAMU</h3>
+        <div id="daftar-pesanan"></div>
+        <div class="ringkasan-total"><b>TOTAL</b><b id="total-bayar">Rp.0</b></div>
+        <p class="aman">✓ Pembayaran Aman dan Tercatat.</p>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h2>DAPURSABLON</h2>
+      <p class="tag">PERCETAKAN & SABLON</p>
+      <p>Menyediakan berbagai produk digital sablon dengan kualitas terbaik dan harga terjangkau. Kami bergerak di bidang sablon kaos, merchandise, percetakan, dan kebutuhan branding lainnya</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/dapur.sablon"><img src="gambar/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/6282177222202"><img src="gambar/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="gambar/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer-kanan">
+      <p>JL. KANA III, CEMP. PUTIH,<br>KEC. JELUTUNG, KOTA JAMBI, JAMBI 36123</p>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
