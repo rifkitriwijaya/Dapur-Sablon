@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - Dapur Sablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar garis-bawah">
+    <a href="index.html" class="logo">DAPURSABLON</a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="index.html#layanan">Layanan</a>
+      <div class="auth">
+        <a href="login.html">Masuk</a> / <a href="daftar.html"><b>Daftar</b></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="halaman-auth">
+    <div class="kartu-auth">
+      <p class="auth-label">DAFTAR</p>
+      <h2>BUAT AKUN DAPURSABLON</h2>
+
+      <div class="tab-auth jarak">
+        <a href="login.html">Masuk</a>
+        <a href="daftar.html" class="aktif">Daftar</a>
+      </div>
+
+      <form id="form-daftar">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Min. 8 Character" minlength="8" required>
+
+        <label for="ulang">Repeat Password</label>
+        <input type="password" id="ulang" name="ulang" placeholder="Repead Password" required>
+
+        <p class="pesan-auth" id="pesan"></p>
+        <button type="submit" class="btn-auth">Daftar Sekarang</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h2>DAPURSABLON</h2>
+      <p class="tag">PERCETAKAN & SABLON</p>
+      <p>Menyediakan berbagai produk digital sablon dengan kualitas terbaik dan harga terjangkau. Kami bergerak di bidang sablon kaos, merchandise, percetakan, dan kebutuhan branding lainnya</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/dapur.sablon"><img src="gambar/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/6282177222202"><img src="gambar/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="gambar/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer-kanan">
+      <p>JL. KANA III, CEMP. PUTIH,<br>KEC. JELUTUNG, KOTA JAMBI, JAMBI 36123</p>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

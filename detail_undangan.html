@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan - Dapur Sablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-login="wajib">
+
+  <header class="navbar navbar-user garis-bawah">
+    <a href="beranda.html" class="logo">DAPURSABLON</a>
+
+    <form class="pencarian" action="#">
+      <select onchange="if (this.value) location.href = 'beranda.html#' + this.value">
+        <option value="">KATEGORI</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="banner">Banner</option>
+        <option value="screen">Screen Printing</option>
+        <option value="sticker">Sticker & Label</option>
+        <option value="merch">Merchendise</option>
+      </select>
+      <input type="text" placeholder="Cari produk yang diinginkan disini...">
+      <button type="submit">Cari</button>
+    </form>
+
+    <div class="akun">
+      <a href="keranjang.html" class="keranjang"><img src="" alt="Keranjang"></a>
+      <a href="riwayat.html" class="nama-user">Rifki Triwijaya</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </header>
+
+  <main class="detail">
+    <h2 class="detail-judul">DETAIL PRODUK</h2>
+
+    <section class="detail-atas">
+      <div class="detail-foto">
+        <img src="gambar/undangan.jpg" alt="Undangan Pernikahan">
+      </div>
+
+      <form class="detail-info" id="form-pesan" data-id="undangan-pernikahan" data-nama="Undangan Pernikahan" data-ket="Art carton 260 gsm, paket 50 pcs" data-harga="150000">
+        <div class="rating-baris">
+          <span class="bintang">★★★★<i>★</i></span>
+          <b>4.8</b>
+          <span>30 Ulasan</span>
+          <span class="terlaris">Terlaris</span>
+        </div>
+
+        <p class="jenis">UNDANGAN & CETAK</p>
+        <h1>Undangan Pernikahan</h1>
+        <p class="deskripsi">Undangan pernikahan cetak dengan pilihan kertas dan finishing. Harga per paket 50 pcs.</p>
+
+        <p class="harga-besar" id="harga-satuan" style="margin-bottom:30px">Rp. 150.000,00</p>
+
+        <hr>
+
+        <p class="label-form">Ukuran</p>
+        <div class="pilihan-ukuran">
+          <label><input type="radio" name="ukuran" value="10 x 21 cm" data-label="ukuran" data-tambah="0" checked><span>10 x 21 cm</span></label>
+          <label><input type="radio" name="ukuran" value="15 x 21 cm" data-label="ukuran" data-tambah="50000"><span>15 x 21 cm</span></label>
+        </div>
+
+        <p class="label-form">Jenis Kertas</p>
+        <select name="kertas" class="posisi" data-label="kertas">
+          <option value="Art carton 260 gsm" data-tambah="0">Art carton 260 gsm</option>
+          <option value="Linen" data-tambah="75000">Linen</option>
+          <option value="Jasmine" data-tambah="100000">Jasmine</option>
+        </select>
+
+        <p class="label-form">Finishing</p>
+        <select name="finishing" class="posisi" data-label="finishing">
+          <option value="Tanpa finishing" data-tambah="0">Tanpa finishing</option>
+          <option value="Laminasi doff" data-tambah="25000">Laminasi doff</option>
+          <option value="Emboss / foil" data-tambah="100000">Emboss / foil</option>
+        </select>
+
+        <p class="label-form">File Desain</p>
+        <label class="upload">
+          <input type="file" name="desain" accept=".pdf,.jpg,.jpeg,.png">
+          <img src="" alt="">
+          <span>
+            Upload File Desain
+            <small>Pdf, JPEG, PNG atau JPG maksimal 10 mb.</small>
+          </span>
+        </label>
+
+        <div class="jumlah-total">
+          <div class="jumlah">
+            <button type="button" id="kurang">−</button>
+            <input type="number" id="jumlah" name="jumlah" value="1" min="1">
+            <button type="button" id="tambah">+</button>
+          </div>
+          <p class="total">Total <span id="total">Rp 150.000,00</span></p>
+        </div>
+
+        <button type="submit" class="btn-keranjang">Tambah Ke Keranjang</button>
+      </form>
+    </section>
+
+    <section class="detail-tengah">
+      <div class="tentang-produk">
+        <h3>Tentang Produk</h3>
+        <div class="isi">
+          <p>Undangan dicetak dengan warna lembut dan potongan rapi, sesuai tema acara kamu. Tersedia pilihan kertas dan finishing.</p>
+          <p>Kirim data acara dan referensi desain, lalu kami kirim contoh tampilan sebelum dicetak.</p>
+        </div>
+      </div>
+
+      <div class="spesifikasi">
+        <h3>Spesifikasi</h3>
+        <div class="baris"><span>Bahan</span><span>Art Carton / Linen / Jasmine</span></div>
+        <div class="baris"><span>Ukuran</span><span>10 x 21 cm, 15 x 21 cm</span></div>
+        <div class="baris"><span>Cetak</span><span>Full color</span></div>
+        <div class="baris"><span>Isi Paket</span><span>50 pcs</span></div>
+        <div class="baris"><span>Minimum Order</span><span>1 paket</span></div>
+      </div>
+    </section>
+
+    <section class="cara-pesan">
+      <h3>Cara Pesan</h3>
+      <p>Bagian teknis kami rapikan, kamu fokus ke hasil yang ingin dibuat.</p>
+      <h2>Sesederhana itu.</h2>
+      <div class="langkah">
+        <div>
+          <h4>01</h4>
+          <h5>Atur Pesanan</h5>
+          <p>Pilih ukuran, bahan, pilihan lainnya, dan jumlah yang kamu butuhkan.</p>
+        </div>
+        <div>
+          <h4>02</h4>
+          <h5>Kirim Desain</h5>
+          <p>Upload file atau kirim referensi. Kami cek sebelum membuat.</p>
+        </div>
+        <div>
+          <h4>03</h4>
+          <h5>Setuju lalu produksi</h5>
+          <p>Setelah proof oke, pesanan masuk produksi dan siap dikirim.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ulasan">
+      <div class="ulasan-atas">
+        <h3>Ulasan Pelanggan</h3>
+        <div class="ulasan-nilai">
+          <b>4.8</b> <span class="bintang">★★★★<i>★</i></span>
+          <p>30 Ulasan Terverifikasi</p>
+        </div>
+      </div>
+      <div class="ulasan-daftar">
+        <div class="ulasan-kartu">
+          <span class="bintang">★★★★<i>★</i></span>
+          <p>“Hasilnya rapi dan sesuai pesanan. Proof-nya membantu banget.”</p>
+        </div>
+        <div class="ulasan-kartu">
+          <span class="bintang">★★★★<i>★</i></span>
+          <p>“Hasilnya rapi dan sesuai pesanan. Proof-nya membantu banget.”</p>
+        </div>
+        <div class="ulasan-kartu">
+          <span class="bintang">★★★★<i>★</i></span>
+          <p>“Hasilnya rapi dan sesuai pesanan. Proof-nya membantu banget.”</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h2>DAPURSABLON</h2>
+      <p class="tag">PERCETAKAN & SABLON</p>
+      <p>Menyediakan berbagai produk digital sablon dengan kualitas terbaik dan harga terjangkau. Kami bergerak di bidang sablon kaos, merchandise, percetakan, dan kebutuhan branding lainnya</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/dapur.sablon"><img src="gambar/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/6282177222202"><img src="gambar/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="gambar/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer-kanan">
+      <p>JL. KANA III, CEMP. PUTIH,<br>KEC. JELUTUNG, KOTA JAMBI, JAMBI 36123</p>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

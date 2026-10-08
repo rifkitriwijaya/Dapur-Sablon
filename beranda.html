@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Dapur Sablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-login="wajib">
+
+  <header class="navbar navbar-user">
+    <a href="beranda.html" class="logo">DAPURSABLON</a>
+
+    <form class="pencarian" action="#">
+      <select onchange="if (this.value) location.href = 'beranda.html#' + this.value">
+        <option value="">KATEGORI</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="banner">Banner</option>
+        <option value="screen">Screen Printing</option>
+        <option value="sticker">Sticker & Label</option>
+        <option value="merch">Merchendise</option>
+      </select>
+      <input type="text" placeholder="Cari produk yang diinginkan disini...">
+      <button type="submit">Cari</button>
+    </form>
+
+    <div class="akun">
+      <a href="keranjang.html" class="keranjang"><img src="gambar/cart.jpg" alt="Keranjang"></a>
+      <a href="riwayat.html" class="nama-user">Rifki Triwijaya</a>
+      <a href="index.html" class="logout">Logout</a>
+    </div>
+  </header>
+
+<section class="banner">
+  <img src="gambar/flash_sale.jpg" alt="Flash Sale 50% Off" class="slide aktif">
+  <img src="gambar/fs2.jpg" alt="Promo 2" class="slide">
+  <img src="gambar/fs3.jpg" alt="Promo 3" class="slide">
+
+  <div class="titik">
+    <span class="aktif"></span>
+    <span></span>
+    <span></span>
+  </div>
+</section>
+
+  <section class="katalog">
+    <h2>KATALOG PRODUK</h2>
+
+    <div class="kategori">
+      <a href="#tshirt"><img src="gambar/tshirt.png" alt="T-Shirt"><span>T-SHIRT</span></a>
+      <a href="#banner"><img src="gambar/rollup.png" alt="Banner"><span>BANNER</span></a>
+      <a href="#screen"><img src="gambar/screen.png" alt="Screen Printing"><span>SCREEN PRINTING</span></a>
+      <a href="#sticker"><img src="gambar/label.png" alt="Sticker dan Label"><span>STICKER & LABEL</span></a>
+      <a href="#merch"><img src="gambar/merchandise.png" alt="Merchendise"><span>MERCHENDISE</span></a>
+    </div>
+
+    <div class="produk-grid">
+      <a href="detail_kaos.html" class="produk" id="tshirt">
+        <img src="gambar/produk/card1.jpg" alt="Kaos Sablon Satuan">
+        <div class="produk-isi">
+          <h4>Kaos Sablon Satuan</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.75.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_neonbox.html" class="produk" id="banner">
+        <img src="gambar/produk/card2.jpg" alt="Neon Box">
+        <div class="produk-isi">
+          <h4>Neon Box</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.350.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_umbul.html" class="produk">
+        <img src="gambar/produk/card3.jpg" alt="Umbul-Umbul">
+        <div class="produk-isi">
+          <h4>Umbul - Umbul</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.45.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_brosur.html" class="produk" id="screen">
+        <img src="gambar/produk/card4.jpg" alt="Brosur">
+        <div class="produk-isi">
+          <h4>Brosur</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.75.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_sticker.html" class="produk" id="sticker">
+        <img src="gambar/produk/card5.jpg" alt="Sticker Vinyl">
+        <div class="produk-isi">
+          <h4>Sticker Vinyl</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.25.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_undangan.html" class="produk">
+        <img src="gambar/produk/card6.jpg" alt="Undangan Pernikahan">
+        <div class="produk-isi">
+          <h4>Undangan Pernikahan</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.150.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_idcard.html" class="produk">
+        <img src="gambar/produk/card7.jpg" alt="ID Card dan Lanyard">
+        <div class="produk-isi">
+          <h4>ID Card & Lanyard</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.35.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+
+      <a href="detail_spunbond.html" class="produk" id="merch">
+        <img src="gambar/produk/card8.jpg" alt="Spunbond">
+        <div class="produk-isi">
+          <h4>Spunbond</h4>
+          <p class="mulai">mulai dari</p>
+          <p class="harga">Rp.15.000</p>
+          <div class="produk-bawah"><span class="bintang">★★★★<i>★</i></span><span>See More ></span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-kiri">
+      <h2>DAPURSABLON</h2>
+      <p class="tag">PERCETAKAN & SABLON</p>
+      <p>Menyediakan berbagai produk digital sablon dengan kualitas terbaik dan harga terjangkau. Kami bergerak di bidang sablon kaos, merchandise, percetakan, dan kebutuhan branding lainnya</p>
+      <div class="sosmed">
+        <a href="https://www.instagram.com/dapur.sablon"><img src="gambar/instagram.png" alt="Instagram"></a>
+        <a href="https://wa.me/6282177222202"><img src="gambar/whatsapp.png" alt="WhatsApp"></a>
+        <a href="#"><img src="gambar/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="gambar/fb.png" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer-kanan">
+      <p>JL. KANA III, CEMP. PUTIH,<br>KEC. JELUTUNG, KOTA JAMBI, JAMBI 36123</p>
+      <hr>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
